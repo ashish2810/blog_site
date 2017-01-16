@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		MyBlog
+	</title>
+</head>
+<body>
+	{% if blogs %}
+		{% for blog in blogs %}
+			<div>
+				<h1>{{blog.titile}}</h1>
+				<p>{{blog.content}}</p>
+			</div>
+		{% endfor %}
+	{% endif %}
+	<a href="/new_blog/">New Blog</a>
+</body>
+</html>
